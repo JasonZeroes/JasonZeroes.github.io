@@ -493,8 +493,7 @@
 <p><code>代码</code>:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">li = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>]</span><br><span class="line">li = list(set(li))</span><br><span class="line">print(li)</span><br><span class="line"><span class="comment"># 结果:[1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
 
-<img src="/.com//Snip20190907_4.png" style="zoom:40%;">
-
+<p><img src="/.com//Snip20190907_4.png" alt></p>
 <h4 id="二-保留原来顺序"><a href="#二-保留原来顺序" class="headerlink" title="二.保留原来顺序"></a>二.保留原来顺序</h4><p>方法一:在不关注顺序的集合方法上,可以改进一下,实现对顺序的保持.利用的就是列表的索引来实现.</p>
 <p><code>代码</code>:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">li = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">3</span>]</span><br><span class="line">new_li = list(set(li))</span><br><span class="line">new_li.sort(key=li.index)</span><br><span class="line">print(new_li)</span><br><span class="line"><span class="comment"># 结果:[1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
